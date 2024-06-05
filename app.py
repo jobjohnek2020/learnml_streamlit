@@ -15,6 +15,8 @@ df = load_data()
 
 st.title('Concrete Regression')
 
+st.write("check out this [link](https://www.kaggle.com/datasets/maajdl/yeh-concret-data)")
+
 st.subheader('Head data')
 st.dataframe(df.head())
 
