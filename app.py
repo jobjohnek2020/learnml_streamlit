@@ -8,7 +8,7 @@ from sklearn.metrics import r2_score,mean_absolute_percentage_error
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv('dataset/Concrete_Data_Yeh.csv')
+    df = pd.read_csv('Concrete_Data_Yeh.csv')
     return df
 
 df = load_data()
