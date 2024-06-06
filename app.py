@@ -61,14 +61,10 @@ plt.subplot(311)
 sns.distplot(df_clean['age'],kde=True)
 
 plt.subplot(312)
-df_clean['slag'].plot(kind='hist')
-plt.xlabel('Slag')
-plt.title('Slag distribution')
+sns.distplot(df_clean['slag'],kde=True)
 
 plt.subplot(313)
-df_clean['cement'].plot(kind='hist')
-plt.xlabel('Cement')
-plt.title('Cement distribution')
+sns.distplot(df_clean['cement'],kde=True)
 
 
 st.pyplot(three_plot_fig)
