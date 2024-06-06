@@ -58,7 +58,7 @@ st.text("Let's check skewness")
 
 three_plot_fig = plt.figure(figsize=(15,30))
 plt.subplot(311)
-sns.distplot(ds['age'],kde=True)
+sns.distplot(df_clean['age'],kde=True)
 
 plt.subplot(312)
 df_clean['slag'].plot(kind='hist')
