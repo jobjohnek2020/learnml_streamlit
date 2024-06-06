@@ -30,6 +30,7 @@ st.subheader('Feature types')
 st.write(df.dtypes)
 
 st.subheader('Finding and removing outliers')
+st.table(df.describe())
 st.text('Using boxplot to find outliers')
 fig = plt.figure(figsize=(14,10))
 sns.boxplot(data=df)
