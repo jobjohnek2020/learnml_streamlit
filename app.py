@@ -58,10 +58,7 @@ st.text("Let's check skewness")
 
 three_plot_fig = plt.figure(figsize=(15,30))
 plt.subplot(311)
-df_clean['age'].plot(kind='hist')
-plt.xlabel('Age')
-plt.title('Age distribution')
-
+sns.distplot(ds['age'],kde=True)
 
 plt.subplot(312)
 df_clean['slag'].plot(kind='hist')
