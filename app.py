@@ -54,18 +54,15 @@ st.text("Shape of dataframe after removing outliers")
 st.write(df_clean.shape)
 
 st.subheader('Checking distribution')
-sns.distplot(df_clean,kde=True)
+
 st.text("Let's check skewness")
 
 three_plot_fig = plt.figure(figsize=(15,30))
-plt.subplot(311)
+plt.subplot(211)
 sns.distplot(df_clean['age'],kde=True)
 
-plt.subplot(312)
+plt.subplot(212)
 sns.distplot(df_clean['slag'],kde=True)
-
-plt.subplot(313)
-sns.distplot(df_clean['cement'],kde=True)
 
 
 st.pyplot(three_plot_fig)
