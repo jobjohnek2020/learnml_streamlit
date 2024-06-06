@@ -54,6 +54,7 @@ st.text("Shape of dataframe after removing outliers")
 st.write(df_clean.shape)
 
 st.subheader('Checking distribution')
+sns.distplot(df_clean,kde=True)
 st.text("Let's check skewness")
 
 three_plot_fig = plt.figure(figsize=(15,30))
